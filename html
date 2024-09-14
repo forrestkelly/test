@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Aptitude Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Career Aptitude Test</h2>
+        <form id="quizForm">
+            <div class="step">
+                <p>1. What do you enjoy most when working on a project?</p>
+                <label><input type="radio" name="q1" value="A"> Analyzing data and finding solutions</label><br>
+                <label><input type="radio" name="q1" value="B"> Coming up with new, creative ideas</label><br>
+                <label><input type="radio" name="q1" value="C"> Organizing tasks and ensuring everything is on track</label><br>
+                <label><input type="radio" name="q1" value="D"> Helping others and working in a team</label>
+            </div>
+            
+            <div class="step">
+                <p>2. What type of environment do you prefer to work in?</p>
+                <label><input type="radio" name="q2" value="A"> Quiet, where I can focus on complex tasks</label><br>
+                <label><input type="radio" name="q2" value="B"> Dynamic, where I can brainstorm and create</label><br>
+                <label><input type="radio" name="q2" value="C"> Structured, with clear processes and organization</label><br>
+                <label><input type="radio" name="q2" value="D"> Collaborative, where I interact with others regularly</label>
+            </div>
+
+            <!-- Additional Steps... -->
+
+            <div class="step">
+                <p>10. How do you handle deadlines?</p>
+                <label><input type="radio" name="q10" value="A"> I break the task into smaller steps and work through them systematically</label><br>
+                <label><input type="radio" name="q10" value="B"> I stay flexible and adapt my process as the deadline approaches</label><br>
+                <label><input type="radio" name="q10" value="C"> I prioritize tasks and manage my time effectively</label><br>
+                <label><input type="radio" name="q10" value="D"> I work with others to ensure the deadline is met and support them when needed</label>
+            </div>
+
+            <div class="nav-buttons">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+
+            <div class="result">
+                <h3>Your Recommended Career Path:</h3>
+                <p id="resultText"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
